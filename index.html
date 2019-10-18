@@ -5,11 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--CSS FILES-->
+    <link href="styles/styles.css" type="text/css" rel="stylesheet" />
+    <!-- PAGE TITLE -->
     <title>Pomodoro Timer</title>
 </head>
 
-<body>
+<body class="container">
+    <!-- HEADER OF THE APP -->
+    <header class="main-header">
+        <!-- LOGO && TITLE -->
+        <a href="index.html" class="webLogo">
+            <img src="/images/Page1_Logo.png">
+            <div class="webName">Pomodoro Timer</div>
+        </a>
 
+        <!-- NAVIGATION BAR -->
+        <nav class="main-nav">
+            <ul>
+                <li> <a href="faq.html">FAQ</a></li>
+                <li> <a href="settings.html">Settings</a></li>
+                <li> <a href="about-me.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- SECTION BUTTONS TOP -->
+    <section class="top-section">
+        <button class="btn-top" id="first-top-btn">Pomodoro</button>
+        <button class="btn-top">Short Break</button>
+        <button class="btn-top">Long Break</button>
+    </section>
+    <!-- END OF SECTION BUTTONS TOP -->
+
+    <!-- TIMER SECTION -->
+    <section class="timer-section">
+        <h1 id="timer_default"></h1>25:00<br />
+    </section>
+    <!-- END TIMER SECTION -->
+
+    <!-- SECTION BUTTONS BOTTOM -->
+    <section class="bottom-section">
+        <button class="btn-bottom" id="start-bottom-btn">Start</button>
+        <button class="btn-bottom" id="pause-bottom-btn">Pause</button>
+        <button class="btn-bottom" id="reset-bottom-btn">Reset</button>
+    </section>
+    <!-- END OF SECTION BUTTONS BOTTOM -->
 </body>
 
 </html>
