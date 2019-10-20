@@ -25,148 +25,604 @@ button:hover {
 
 /* END OF BODY OF THE WEBAPP */
 
-/* START OF HEADER */
 
-    /* LOGO + TITLE*/
-.webLogo {
-    /*Flex so that items are next to each others*/
-    display: flex;
-    /* text should be center of logo */
-    align-items:center;
-    /*to remove the underline*/
-    text-decoration:none;
-}
+/* COMPUTER SCREEN */
+@media(min-width: 1220px){
+        /* START OF HEADER */
 
-.webLogo img {
-    width:75px;
-    height:75px;
-}
+        /* LOGO + TITLE*/
+    .webLogo {
+        /*Flex so that items are next to each others*/
+        display: flex;
+        /* text should be center of logo */
+        align-items:center;
+        /*to remove the underline*/
+        text-decoration:none;
+    }
 
-.webName {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 52px;
-    /* Title is linear-gradient */
-    background: -webkit-linear-gradient(left, #209E64, #2EA5FA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* Spacing it from our Logo */
-    margin-left: 5px;
-}
-    /* END OF LOGO + TITLE */
+    .webLogo img {
+        width:75px;
+        height:75px;
+    }
 
-    /* NAVIGATION BAR */
-.main-nav ul {
-    /*Flex so that items are next to each others*/
-    display:flex;
-    margin:0;
-    padding:0;
-    /*Removing the unecessary dots of list*/
-    list-style:none;
-}
+    .webName {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 52px;
+        /* Title is linear-gradient */
+        background: -webkit-linear-gradient(left, #209E64, #2EA5FA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* Spacing it from our Logo */
+        margin-left: 5px;
+    }
+        /* END OF LOGO + TITLE */
 
-.main-nav a {
-    color:inherit;
-    text-decoration: none;
-    padding: 37px;
-    font-size: 20px;
-    font-weight:400;
-}
+        /* NAVIGATION BAR */
+    .main-nav ul {
+        /*Flex so that items are next to each others*/
+        display:flex;
+        margin:0;
+        padding:0;
+        /*Removing the unecessary dots of list*/
+        list-style:none;
+    }
 
-.main-nav a:hover {
-    color: #2EA5FA;
-}
+    .main-nav a {
+        color:inherit;
+        text-decoration: none;
+        padding: 37px;
+        font-size: 20px;
+        font-weight:400;
+    }
 
-.main-header {
-    /*Flex so that items are next to each others*/
-    display: flex;
-    /*Align center*/
-    align-items: center;
-    /*So that our elements are as far apart as possible*/
-    justify-content: space-between;
-    height: 140px;
-}
-/* END OF HEADER */
+    .main-nav a:hover {
+        color: #2EA5FA;
+    }
 
-/*========================*/
+    .main-header {
+        /*Flex so that items are next to each others*/
+        display: flex;
+        /*Align center*/
+        align-items: center;
+        /*So that our elements are as far apart as possible*/
+        justify-content: space-between;
+        height: 140px;
+    }
+    /* END OF HEADER */
 
-/* BUTTONS TOP */
+    /*========================*/
 
-.top-section {
-    position: absolute;
-    width: auto;
-    height: auto;
-    left: 230px;
-    top: 150px;  
-}
-.btn-top {
-    color: #E0DCDC;
-    font-size: 16px;
-    font-weight: 400;
-    background-color: #2CA4E2;
-    padding: 0.75rem 1.6rem;
-    border-radius: 10px;
-    text-decoration: none;
-    width:270px;
-    margin-left:72px;
-}
+    /* BUTTONS TOP */
 
-#first-top-btn  {
-    margin-left: 0px;
-}
-/* END OF BUTTONS TOP */
+    .top-section {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 230px;
+        top: 150px;  
+    }
+    .btn-top {
+        color: #E0DCDC;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #2CA4E2;
+        padding: 0.75rem 1.6rem;
+        border-radius: 10px;
+        text-decoration: none;
+        width:270px;
+        margin-left:72px;
+    }
 
-/*========================*/
+    #first-top-btn  {
+        margin-left: 0px;
+    }
+    /* END OF BUTTONS TOP */
 
-/* TIMER SECTION */
-.timer-section {
-    position: absolute;
-    width: auto;
-    height: 200px;
-    left: 455px;
-    top: 228px;
-    font-size: 180px;
-    line-height: 180px;
-    display:flex;
-    align-items: center;
-    text-align: center;
-}
-/* END TIMER SECTION */
+    /*========================*/
 
-/*========================*/
+    /* TIMER SECTION */
+    .timer-section {
+        position: absolute;
+        width: auto;
+        height: 200px;
+        left: 455px;
+        top: 228px;
+        font-size: 180px;
+        line-height: 180px;
+        display:flex;
+        align-items: center;
+        text-align: center;
+    }
+    /* END TIMER SECTION */
 
-/* BUTTONS BOTTOM */
+    /*========================*/
 
-.bottom-section {
-    position: absolute;
-    width: auto;
-    height: auto;
-    left: 435px;;
-    top: 473px;
-}
-.btn-bottom {
-    color: #E0DCDC;
-    font-size: 16px;
-    font-weight: 400;
-    background-color: #2CA4E2;
-    padding: 0.8rem 1.6rem;
-    border-radius: 10px;
-    text-decoration: none;
-    width:120px;
-    margin-left:72px;
-}
+    /* BUTTONS BOTTOM */
 
-#start-bottom-btn {
-    margin-left: 0px;
-    background-color:#209E64;
-}
+    .bottom-section {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 435px;;
+        top: 473px;
+    }
+    .btn-bottom {
+        color: #E0DCDC;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #2CA4E2;
+        padding: 0.8rem 1.6rem;
+        border-radius: 10px;
+        text-decoration: none;
+        width:120px;
+        margin-left:72px;
+    }
 
-#pause-bottom-btn {
-    background-color:#F25325;
-}
+    #start-bottom-btn {
+        margin-left: 0px;
+        background-color:#209E64;
+    }
 
-#reset-bottom-btn {
-    background-color:#FFAB3C;
-}
+    #pause-bottom-btn {
+        background-color:#F25325;
+    }
+
+    #reset-bottom-btn {
+        background-color:#FFAB3C;
+    }
 
 /* END BUTTONS BOTTOM */
+}
+/* END OF COMPUTER SCREEN */ 
+
+/*  */
+@media(max-width: 1220px){
+        /* START OF HEADER */
+
+        /* LOGO + TITLE*/
+    .webLogo {
+        /*Flex so that items are next to each others*/
+        display: flex;
+        /* text should be center of logo */
+        align-items:center;
+        /*to remove the underline*/
+        text-decoration:none;
+    }
+
+    .webLogo img {
+        width:50px;
+        height:50px;
+    }
+
+    .webName {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 52px;
+        /* Title is linear-gradient */
+        background: -webkit-linear-gradient(left, #209E64, #2EA5FA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* Spacing it from our Logo */
+        margin-left: 5px;
+    }
+        /* END OF LOGO + TITLE */
+
+        /* NAVIGATION BAR */
+    .main-nav ul {
+        /*Flex so that items are next to each others*/
+        display:flex;
+        margin:0;
+        padding:0;
+        /*Removing the unecessary dots of list*/
+        list-style:none;
+    }
+
+    .main-nav a {
+        color:inherit;
+        text-decoration: none;
+        padding: 8px;
+        font-size: 20px;
+        font-weight:400;
+    }
+
+    .main-nav a:hover {
+        color: #2EA5FA;
+    }
+
+    .main-header {
+        /*Flex so that items are next to each others*/
+        display: flex;
+        /*Align center*/
+        align-items: center;
+        /*So that our elements are as far apart as possible*/
+        justify-content: space-between;
+        height: 140px;
+    }
+    /* END OF HEADER */
+
+    /*========================*/
+
+    /* BUTTONS TOP */
+
+    .top-section {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 300px;
+        top: 120px;  
+    }
+    .btn-top {
+        color: #E0DCDC;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #2CA4E2;
+        padding: 0.75rem 1.6rem;
+        border-radius: 10px;
+        text-decoration: none;
+        width:150px;
+        margin-left:30px;
+    }
+
+    #first-top-btn  {
+        margin-left: 0px;
+    }
+    /* END OF BUTTONS TOP */
+
+    /*========================*/
+
+    /* TIMER SECTION */
+    .timer-section {
+        position: absolute;
+        width: auto;
+        height: 200px;
+        left: 325px;
+        top: 228px;
+        font-size: 180px;
+        line-height: 180px;
+        display:flex;
+        align-items: center;
+        text-align: center;
+    }
+    /* END TIMER SECTION */
+
+    /*========================*/
+
+    /* BUTTONS BOTTOM */
+
+    .bottom-section {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 355px;;
+        top: 473px;
+    }
+    .btn-bottom {
+        color: #E0DCDC;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #2CA4E2;
+        padding: 0.8rem 1.6rem;
+        border-radius: 10px;
+        text-decoration: none;
+        width:120px;
+        margin-left:30px;
+    }
+
+    #start-bottom-btn {
+        margin-left: 0px;
+        background-color:#209E64;
+    }
+
+    #pause-bottom-btn {
+        background-color:#F25325;
+    }
+
+    #reset-bottom-btn {
+        background-color:#FFAB3C;
+    }
+
+/* END BUTTONS BOTTOM */
+}
+/* */
+
+/*  */
+@media(max-width: 840px){
+        /* START OF HEADER */
+
+        /* LOGO + TITLE*/
+    .webLogo {
+        /*Flex so that items are next to each others*/
+        display: flex;
+        /* text should be center of logo */
+        align-items:center;
+        /*to remove the underline*/
+        text-decoration:none;
+    }
+
+    .webLogo img {
+        width:50px;
+        height:50px;
+    }
+
+    .webName {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 52px;
+        /* Title is linear-gradient */
+        background: -webkit-linear-gradient(left, #209E64, #2EA5FA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* Spacing it from our Logo */
+        margin-left: 5px;
+    }
+        /* END OF LOGO + TITLE */
+
+        /* NAVIGATION BAR */
+    .main-nav ul {
+        /*Flex so that items are next to each others*/
+        display:flex;
+        margin:0;
+        padding:0;
+        /*Removing the unecessary dots of list*/
+        list-style:none;
+    }
+
+    .main-nav a {
+        color:inherit;
+        text-decoration: none;
+        padding: 8px;
+        font-size: 13px;
+        font-weight:400;
+    }
+
+    .main-nav a:hover {
+        color: #2EA5FA;
+    }
+
+    .main-header {
+        /*Flex so that items are next to each others*/
+        display: flex;
+        /*Align center*/
+        align-items: center;
+        /*So that our elements are as far apart as possible*/
+        
+        height: 140px;
+    }
+    /* END OF HEADER */
+
+    /*========================*/
+
+    /* BUTTONS TOP */
+
+    .top-section {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 150px;
+        top: 120px;  
+    }
+    .btn-top {
+        color: #E0DCDC;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #2CA4E2;
+        padding: 0.75rem 1.6rem;
+        border-radius: 10px;
+        text-decoration: none;
+        width:150px;
+        margin-left:30px;
+    }
+
+    #first-top-btn  {
+        margin-left: 0px;
+    }
+    /* END OF BUTTONS TOP */
+
+    /*========================*/
+
+    /* TIMER SECTION */
+    .timer-section {
+        position: absolute;
+        width: auto;
+        height: 200px;
+        left: 170px;
+        top: 228px;
+        font-size: 180px;
+        line-height: 180px;
+        display:flex;
+        align-items: center;
+        text-align: center;
+    }
+    /* END TIMER SECTION */
+
+    /*========================*/
+
+    /* BUTTONS BOTTOM */
+
+    .bottom-section {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 185px;;
+        top: 473px;
+    }
+    .btn-bottom {
+        color: #E0DCDC;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #2CA4E2;
+        padding: 0.8rem 1.6rem;
+        border-radius: 10px;
+        text-decoration: none;
+        width:120px;
+        margin-left:30px;
+    }
+
+    #start-bottom-btn {
+        margin-left: 0px;
+        background-color:#209E64;
+    }
+
+    #pause-bottom-btn {
+        background-color:#F25325;
+    }
+
+    #reset-bottom-btn {
+        background-color:#FFAB3C;
+    }
+
+/* END BUTTONS BOTTOM */
+}
+/* */
+
+/*  */
+@media(max-width: 690px){
+        /* START OF HEADER */
+
+        /* LOGO + TITLE*/
+    .webLogo {
+        /*Flex so that items are next to each others*/
+        display: flex;
+        /* text should be center of logo */
+        align-items:center;
+        /*to remove the underline*/
+        text-decoration:none;
+    }
+
+    .webLogo img {
+        width:50px;
+        height:50px;
+    }
+
+    .webName {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 52px;
+        /* Title is linear-gradient */
+        background: -webkit-linear-gradient(left, #209E64, #2EA5FA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* Spacing it from our Logo */
+        margin-left: 5px;
+    }
+        /* END OF LOGO + TITLE */
+
+        /* NAVIGATION BAR */
+    .main-nav ul {
+        /*Flex so that items are next to each others*/
+        display:flex;
+        margin:0;
+        padding:0;
+        /*Removing the unecessary dots of list*/
+        list-style:none;
+    }
+
+    .main-nav a {
+        color:inherit;
+        text-decoration: none;
+        padding: 8px;
+        font-size: 13px;
+        font-weight:400;
+    }
+
+    .main-nav a:hover {
+        color: #2EA5FA;
+    }
+
+    .main-header {
+        /*Flex so that items are next to each others*/
+        display: flex;
+        /*Align center*/
+        align-items: center;
+        /*So that our elements are as far apart as possible*/
+        
+        height: 140px;
+    }
+    /* END OF HEADER */
+
+    /*========================*/
+
+    /* BUTTONS TOP */
+
+    .top-section {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50px;
+        top: 120px;  
+    }
+    .btn-top {
+        color: #E0DCDC;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #2CA4E2;
+        padding: 0.75rem 1.2rem;
+        border-radius: 10px;
+        text-decoration: none;
+        width:130px;
+        margin-left:10px;
+    }
+
+    #first-top-btn  {
+        margin-left: 0px;
+    }
+    /* END OF BUTTONS TOP */
+
+    /*========================*/
+
+    /* TIMER SECTION */
+    .timer-section {
+        position: absolute;
+        width: auto;
+        height: 200px;
+        left: 75px;
+        top: 228px;
+        font-size: 140px;
+        line-height: 180px;
+        display:flex;
+        align-items: center;
+        text-align: center;
+    }
+    /* END TIMER SECTION */
+
+    /*========================*/
+
+    /* BUTTONS BOTTOM */
+
+    .bottom-section {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 70px;;
+        top: 473px;
+    }
+    .btn-bottom {
+        color: #E0DCDC;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #2CA4E2;
+        padding: 0.8rem 1.2rem;
+        border-radius: 10px;
+        text-decoration: none;
+        width:100px;
+        margin-left:30px;
+    }
+
+    #start-bottom-btn {
+        margin-left: 0px;
+        background-color:#209E64;
+    }
+
+    #pause-bottom-btn {
+        background-color:#F25325;
+    }
+
+    #reset-bottom-btn {
+        background-color:#FFAB3C;
+    }
+
+/* END BUTTONS BOTTOM */
+}
+/* */
+
