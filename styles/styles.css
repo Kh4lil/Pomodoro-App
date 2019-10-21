@@ -25,21 +25,54 @@ button:hover {
 
 /* END OF BODY OF THE WEBAPP */
 
+/* START OF HEADER */
 
-/* COMPUTER SCREEN */
-@media(min-width: 1220px){
-        /* START OF HEADER */
+/* LOGO + TITLE*/
+.webLogo {
+    /*Flex so that items are next to each others*/
+    display: flex;
+    /* text should be center of logo */
+    align-items:center;
+    /*to remove the underline*/
+    text-decoration:none;
+}
 
-        /* LOGO + TITLE*/
-    .webLogo {
-        /*Flex so that items are next to each others*/
-        display: flex;
-        /* text should be center of logo */
-        align-items:center;
-        /*to remove the underline*/
-        text-decoration:none;
+
+/* NAVIGATION BAR */
+.main-nav ul {
+/*Flex so that items are next to each others*/
+display:flex;
+margin:0;
+padding:0;
+/*Removing the unecessary dots of list*/
+list-style:none;
     }
 
+.main-nav a:hover {
+    color: #2EA5FA;
+}
+
+#first-top-btn  {
+    margin-left: 0px;
+}
+
+
+#start-bottom-btn {
+    margin-left: 0px;
+    background-color:#209E64;
+}
+
+#pause-bottom-btn {
+    background-color:#F25325;
+}
+
+#reset-bottom-btn {
+    background-color:#FFAB3C;
+}
+
+/* MEDIA QUERIES */
+/* COMPUTER SCREEN */
+@media(min-width: 1220px){
     .webLogo img {
         width:75px;
         height:75px;
@@ -58,26 +91,12 @@ button:hover {
     }
         /* END OF LOGO + TITLE */
 
-        /* NAVIGATION BAR */
-    .main-nav ul {
-        /*Flex so that items are next to each others*/
-        display:flex;
-        margin:0;
-        padding:0;
-        /*Removing the unecessary dots of list*/
-        list-style:none;
-    }
-
     .main-nav a {
         color:inherit;
         text-decoration: none;
         padding: 37px;
         font-size: 20px;
         font-weight:400;
-    }
-
-    .main-nav a:hover {
-        color: #2EA5FA;
     }
 
     .main-header {
@@ -112,10 +131,6 @@ button:hover {
         text-decoration: none;
         width:270px;
         margin-left:72px;
-    }
-
-    #first-top-btn  {
-        margin-left: 0px;
     }
     /* END OF BUTTONS TOP */
 
@@ -159,18 +174,6 @@ button:hover {
         margin-left:72px;
     }
 
-    #start-bottom-btn {
-        margin-left: 0px;
-        background-color:#209E64;
-    }
-
-    #pause-bottom-btn {
-        background-color:#F25325;
-    }
-
-    #reset-bottom-btn {
-        background-color:#FFAB3C;
-    }
 
 /* END BUTTONS BOTTOM */
 }
@@ -178,17 +181,6 @@ button:hover {
 
 /*  */
 @media(max-width: 1220px){
-        /* START OF HEADER */
-
-        /* LOGO + TITLE*/
-    .webLogo {
-        /*Flex so that items are next to each others*/
-        display: flex;
-        /* text should be center of logo */
-        align-items:center;
-        /*to remove the underline*/
-        text-decoration:none;
-    }
 
     .webLogo img {
         width:50px;
@@ -208,26 +200,12 @@ button:hover {
     }
         /* END OF LOGO + TITLE */
 
-        /* NAVIGATION BAR */
-    .main-nav ul {
-        /*Flex so that items are next to each others*/
-        display:flex;
-        margin:0;
-        padding:0;
-        /*Removing the unecessary dots of list*/
-        list-style:none;
-    }
-
     .main-nav a {
         color:inherit;
         text-decoration: none;
         padding: 8px;
         font-size: 20px;
         font-weight:400;
-    }
-
-    .main-nav a:hover {
-        color: #2EA5FA;
     }
 
     .main-header {
@@ -264,9 +242,6 @@ button:hover {
         margin-left:30px;
     }
 
-    #first-top-btn  {
-        margin-left: 0px;
-    }
     /* END OF BUTTONS TOP */
 
     /*========================*/
@@ -309,36 +284,13 @@ button:hover {
         margin-left:30px;
     }
 
-    #start-bottom-btn {
-        margin-left: 0px;
-        background-color:#209E64;
-    }
-
-    #pause-bottom-btn {
-        background-color:#F25325;
-    }
-
-    #reset-bottom-btn {
-        background-color:#FFAB3C;
-    }
-
 /* END BUTTONS BOTTOM */
 }
 /* */
 
 /*  */
 @media(max-width: 840px){
-        /* START OF HEADER */
 
-        /* LOGO + TITLE*/
-    .webLogo {
-        /*Flex so that items are next to each others*/
-        display: flex;
-        /* text should be center of logo */
-        align-items:center;
-        /*to remove the underline*/
-        text-decoration:none;
-    }
 
     .webLogo img {
         width:50px;
@@ -358,15 +310,6 @@ button:hover {
     }
         /* END OF LOGO + TITLE */
 
-        /* NAVIGATION BAR */
-    .main-nav ul {
-        /*Flex so that items are next to each others*/
-        display:flex;
-        margin:0;
-        padding:0;
-        /*Removing the unecessary dots of list*/
-        list-style:none;
-    }
 
     .main-nav a {
         color:inherit;
@@ -374,10 +317,6 @@ button:hover {
         padding: 8px;
         font-size: 13px;
         font-weight:400;
-    }
-
-    .main-nav a:hover {
-        color: #2EA5FA;
     }
 
     .main-header {
@@ -414,9 +353,6 @@ button:hover {
         margin-left:30px;
     }
 
-    #first-top-btn  {
-        margin-left: 0px;
-    }
     /* END OF BUTTONS TOP */
 
     /*========================*/
@@ -459,36 +395,13 @@ button:hover {
         margin-left:30px;
     }
 
-    #start-bottom-btn {
-        margin-left: 0px;
-        background-color:#209E64;
-    }
-
-    #pause-bottom-btn {
-        background-color:#F25325;
-    }
-
-    #reset-bottom-btn {
-        background-color:#FFAB3C;
-    }
-
 /* END BUTTONS BOTTOM */
 }
 /* */
 
 /*  */
 @media(max-width: 690px){
-        /* START OF HEADER */
 
-        /* LOGO + TITLE*/
-    .webLogo {
-        /*Flex so that items are next to each others*/
-        display: flex;
-        /* text should be center of logo */
-        align-items:center;
-        /*to remove the underline*/
-        text-decoration:none;
-    }
 
     .webLogo img {
         width:50px;
@@ -508,15 +421,6 @@ button:hover {
     }
         /* END OF LOGO + TITLE */
 
-        /* NAVIGATION BAR */
-    .main-nav ul {
-        /*Flex so that items are next to each others*/
-        display:flex;
-        margin:0;
-        padding:0;
-        /*Removing the unecessary dots of list*/
-        list-style:none;
-    }
 
     .main-nav a {
         color:inherit;
@@ -526,9 +430,6 @@ button:hover {
         font-weight:400;
     }
 
-    .main-nav a:hover {
-        color: #2EA5FA;
-    }
 
     .main-header {
         /*Flex so that items are next to each others*/
@@ -564,9 +465,6 @@ button:hover {
         margin-left:10px;
     }
 
-    #first-top-btn  {
-        margin-left: 0px;
-    }
     /* END OF BUTTONS TOP */
 
     /*========================*/
@@ -608,20 +506,6 @@ button:hover {
         width:100px;
         margin-left:30px;
     }
-
-    #start-bottom-btn {
-        margin-left: 0px;
-        background-color:#209E64;
-    }
-
-    #pause-bottom-btn {
-        background-color:#F25325;
-    }
-
-    #reset-bottom-btn {
-        background-color:#FFAB3C;
-    }
-
 /* END BUTTONS BOTTOM */
 }
 /* */
