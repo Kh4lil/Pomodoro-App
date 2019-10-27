@@ -13,20 +13,22 @@ const longBtn = document.getElementById('long-break-btn');
 
 function pomodoro() {
     document.getElementById('timer_default').innerHTML = "25:00";
+    timeSelected = document.getElementById('timer_default').innerHTML;
 }
 
 function shortBreak() {
     document.getElementById('timer_default').innerHTML = "05:00";
+    timeSelected = document.getElementById('timer_default').innerHTML;
 }
 
 function longBreak() {
     document.getElementById('timer_default').innerHTML = "&nbsp;10:00";
+    timeSelected = document.getElementById('timer_default').innerHTML;
 }
 
 function start() {
     timerRunning = true;
     minuteSeconds = document.getElementById('timer_default').innerHTML;
-    timeSelected = minuteSeconds;
     minuteSeconds = minuteSeconds.replace('&nbsp;', '');
     convertToSeconds(minuteSeconds);
 }
@@ -43,8 +45,6 @@ function timeIt() {
         if (timerRunning) {
             counter++;
             document.getElementById('timer_default').innerHTML = convertToMinutes(timeLeftInSeconds - counter);
-        } else {
-            counter == counter;
         }
     }, 1000)
 
