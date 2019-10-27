@@ -8,6 +8,8 @@
 
     <!--CSS FILES-->
     <link href="styles/styles.css" type="text/css" rel="stylesheet" />
+    <!-- JS FILES -->
+    <script src="scripts/script.js"></script>
     <!-- PAGE TITLE -->
     <title>Pomodoro Timer</title>
 </head>
@@ -35,23 +37,23 @@
 
     <!-- SECTION BUTTONS TOP -->
     <section class="top-section">
-        <button class="btn-top" id="first-top-btn">Pomodoro</button>
-        <button class="btn-top">Short Break</button>
-        <button class="btn-top">Long Break</button>
+        <button class="btn-top" id="first-top-btn" onclick="pomodoro();">Pomodoro</button>
+        <button class="btn-top" id="short-break-btn" onclick="shortBreak();">Short Break</button>
+        <button class="btn-top" id="long-break-btn" onclick="longBreak();">Long Break</button>
     </section>
     <!-- END OF SECTION BUTTONS TOP -->
 
     <!-- TIMER SECTION -->
     <section class="timer-section">
-        <h1 id="timer_default"></h1>25:00<br />
+        <h1 id="timer_default">25:00</h1><br />
     </section>
     <!-- END TIMER SECTION -->
 
     <!-- SECTION BUTTONS BOTTOM -->
     <section class="bottom-section">
-        <button class="btn-bottom" id="start-bottom-btn">Start</button>
-        <button class="btn-bottom" id="pause-bottom-btn">Pause</button>
-        <button class="btn-bottom" id="reset-bottom-btn">Reset</button>
+        <button class="btn-bottom" id="start-bottom-btn" onclick='start();'>Start</button>
+        <button class="btn-bottom" id="pause-bottom-btn" onclick='pause();'>Pause</button>
+        <button class="btn-bottom" id="reset-bottom-btn" onclick='reset();'>Reset</button>
     </section>
     <!-- END OF SECTION BUTTONS BOTTOM -->
 </body>

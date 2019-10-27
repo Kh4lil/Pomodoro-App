@@ -1,0 +1,72 @@
+'use strict';
+
+var counter = 0;
+var timeLeftInSeconds;
+var timer = document.getElementById('timer_default');
+var timerId;
+var minuteSeconds, timeSelected;
+var timerRunning;
+
+const pomodoroBtn = document.getElementById('first-top-btn');
+const shortBtn = document.getElementById('short-break-btn');
+const longBtn = document.getElementById('long-break-btn');
+
+function pomodoro() {
+    document.getElementById('timer_default').innerHTML = "25:00";
+}
+
+function shortBreak() {
+    document.getElementById('timer_default').innerHTML = "05:00";
+}
+
+function longBreak() {
+    document.getElementById('timer_default').innerHTML = "&nbsp;10:00";
+}
+
+function start() {
+    timerRunning = true;
+    minuteSeconds = document.getElementById('timer_default').innerHTML;
+    timeSelected = minuteSeconds;
+    minuteSeconds = minuteSeconds.replace('&nbsp;', '');
+    convertToSeconds(minuteSeconds);
+}
+
+function convertToSeconds(minuteSeconds) {
+    var split = minuteSeconds.split(':')
+    var seconds = (+split[0]) * 60 + (+split[1]);
+    timeLeftInSeconds = seconds;
+    timeIt();
+}
+
+function timeIt() {
+    timerId = setInterval(function () {
+        if (timerRunning) {
+            counter++;
+            document.getElementById('timer_default').innerHTML = convertToMinutes(timeLeftInSeconds - counter);
+        } else {
+            counter == counter;
+        }
+    }, 1000)
+
+}
+
+function convertToMinutes(s) {
+    var min = Math.floor(s / 60);
+    var sec = s % 60;
+
+    return ('0' + min).slice(-2) + ':' + ('0' + sec).slice(-2);
+}
+
+function pause() {
+    timerRunning = false;
+    clearInterval(timerId);
+    counter = 0;
+}
+
+function reset() {
+    timerRunning = false;
+    clearInterval(timerId);
+    counter = 0;
+    document.getElementById('timer_default').innerHTML = timeSelected;
+}
+
