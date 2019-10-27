@@ -45,6 +45,12 @@ function timeIt() {
         if (timerRunning) {
             counter++;
             document.getElementById('timer_default').innerHTML = convertToMinutes(timeLeftInSeconds - counter);
+        } if (counter == timeLeftInSeconds) {
+            document.getElementById('alarm').play();
+            timerRunning = false;
+            clearInterval(timerId);
+            counter = 0;
+            document.getElementById('timer_default').innerHTML = timeSelected;
         }
     }, 1000)
 
