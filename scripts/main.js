@@ -12,21 +12,34 @@ const shortBtn = document.getElementById('short-break-btn');
 const longBtn = document.getElementById('long-break-btn');
 
 function pomodoro() {
+    clearInterval(timerId);
+    document.getElementById("start-bottom-btn").disabled = false;
+    counter = 0;
+    timerRunning = false;
     document.getElementById('timer_default').innerHTML = "25:00";
     timeSelected = document.getElementById('timer_default').innerHTML;
 }
 
 function shortBreak() {
+    clearInterval(timerId);
+    document.getElementById("start-bottom-btn").disabled = false;
+    counter = 0;
+    timerRunning = false;
     document.getElementById('timer_default').innerHTML = "05:00";
     timeSelected = document.getElementById('timer_default').innerHTML;
 }
 
 function longBreak() {
+    clearInterval(timerId);
+    document.getElementById("start-bottom-btn").disabled = false;
+    counter = 0;
+    timerRunning = false;
     document.getElementById('timer_default').innerHTML = "&nbsp;10:00";
     timeSelected = document.getElementById('timer_default').innerHTML;
 }
 
 function start() {
+    document.getElementById("start-bottom-btn").disabled = true;
     timerRunning = true;
     minuteSeconds = document.getElementById('timer_default').innerHTML;
     minuteSeconds = minuteSeconds.replace('&nbsp;', '');
@@ -64,6 +77,7 @@ function convertToMinutes(s) {
 }
 
 function pause() {
+    document.getElementById("start-bottom-btn").disabled = false;
     timerRunning = false;
     clearInterval(timerId);
     counter = 0;
@@ -74,5 +88,6 @@ function reset() {
     clearInterval(timerId);
     counter = 0;
     document.getElementById('timer_default').innerHTML = timeSelected;
+    document.getElementById("start-bottom-btn").disabled = false;
 }
 
