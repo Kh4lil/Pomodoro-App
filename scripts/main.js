@@ -69,7 +69,6 @@ function timeIt() {
             counter = 0;
             document.getElementById('timer_default').innerHTML = timeSelected;
             if (successCounter == 1 && timeLeftInSeconds == 1500) {
-<<<<<<< HEAD
                 document.getElementById('spot2').src = "/images/tree3_end3.png";
             } else if (successCounter == 2 && timeLeftInSeconds == 1500) {
                 document.getElementById('spot3').src = "/images/tree1_end1.png";
@@ -79,20 +78,9 @@ function timeIt() {
                 document.getElementById('spot5').src = "/images/tree2_end1.png";
             } else if (successCounter == 5 && timeLeftInSeconds == 1500) {
                 document.getElementById('spot6').src = "/images/tree3_end3.png";
-=======
-                document.getElementById('spot2').src = "../images/tree3_end3.png";
-            } else if (successCounter == 2 && timeLeftInSeconds == 1500) {
-                document.getElementById('spot3').src = "../images/tree1_end1.png";
-            } else if (successCounter == 3 && timeLeftInSeconds == 1500) {
-                document.getElementById('spot4').src = "../images/tree1_end2.png";
-            } else if (successCounter == 4 && timeLeftInSeconds == 1500) {
-                document.getElementById('spot5').src = "../images/tree2_end1.png";
-            } else if (successCounter == 5 && timeLeftInSeconds == 1500) {
-                document.getElementById('spot6').src = "../images/tree3_end3.png";
->>>>>>> 6074ecb2a6ffdfc279ab1b85137528d69e79d0ed
             }
         }
-    }, 10)
+    }, 1000)
 
 }
 
