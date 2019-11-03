@@ -10,12 +10,12 @@ The Pomodoro Technique is a time management method developed by Francesco Cirill
 
 # Instructions:
 
-Decide on the task to be done.
-Set the pomodoro timer.
-![Image of pomodoro]("Page1_Logo.png")
-Work on the task.
-End work when the timer rings and new tree grow.
+Decide on the task to be done.<br />
+Set the pomodoro timer.<br />
+![Image of pomodoro]("./images/Page1_Logo.png")
+Work on the task.<br />
+End work when the timer rings and new tree grow.<br />
 
-Take short break.
+Take short break.<br />
 
-After four pomodoros, take a longer break, reset web page, then go to step 1.
+After four pomodoros, take a longer break, reset web page, then go to step 1.<br />
