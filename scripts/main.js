@@ -80,7 +80,7 @@ function timeIt() {
                 document.getElementById('spot6').src = "/images/tree3_end3.png";
             }
         }
-    }, 1000)
+    }, 10)
 
 }
 
