@@ -4,8 +4,10 @@ var counter = 0;
 var timeLeftInSeconds;
 var timer = document.getElementById('timer_default');
 var timerId;
-var minuteSeconds, timeSelected;
+var minuteSeconds;
+var timeSelected = "25:00";
 var timerRunning;
+var successCounter = 0;
 
 const pomodoroBtn = document.getElementById('first-top-btn');
 const shortBtn = document.getElementById('short-break-btn');
@@ -59,13 +61,26 @@ function timeIt() {
             counter++;
             document.getElementById('timer_default').innerHTML = convertToMinutes(timeLeftInSeconds - counter);
         } if (counter == timeLeftInSeconds) {
+            successCounter++;
+            document.getElementById("start-bottom-btn").disabled = false;
             document.getElementById('alarm').play();
             timerRunning = false;
             clearInterval(timerId);
             counter = 0;
             document.getElementById('timer_default').innerHTML = timeSelected;
+            if (successCounter == 1 && timeLeftInSeconds == 1500) {
+                document.getElementById('spot2').src = "images/tree3_end3.png";
+            } else if (successCounter == 2 && timeLeftInSeconds == 1500) {
+                document.getElementById('spot3').src = "images/tree1_end1.png";
+            } else if (successCounter == 3 && timeLeftInSeconds == 1500) {
+                document.getElementById('spot4').src = "images/tree1_end2.png";
+            } else if (successCounter == 4 && timeLeftInSeconds == 1500) {
+                document.getElementById('spot5').src = "images/tree2_end1.png";
+            } else if (successCounter == 5 && timeLeftInSeconds == 1500) {
+                document.getElementById('spot6').src = "images/tree3_end3.png";
+            }
         }
-    }, 1000)
+    }, 10)
 
 }
 
