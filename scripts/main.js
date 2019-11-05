@@ -80,7 +80,7 @@ function timeIt() {
                 document.getElementById('spot6').src = url("https://i.ibb.co/HPyG9cm/tree3-end3.png");
             }
         }
-    }, 1000)
+    }, 10)
 
 }
 
