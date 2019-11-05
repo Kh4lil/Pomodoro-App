@@ -5,7 +5,7 @@ var timeLeftInSeconds;
 var timer = document.getElementById('timer_default');
 var timerId;
 var minuteSeconds;
-var timeSelected = "01:00";
+var timeSelected = "25:00";
 var timerRunning;
 var successCounter = 0;
 
