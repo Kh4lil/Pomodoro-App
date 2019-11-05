@@ -5,7 +5,7 @@ var timeLeftInSeconds;
 var timer = document.getElementById('timer_default');
 var timerId;
 var minuteSeconds;
-var timeSelected = "25:00";
+var timeSelected = "01:00";
 var timerRunning;
 var successCounter = 0;
 
@@ -80,7 +80,7 @@ function timeIt() {
                 document.getElementById('spot6').src = url("https://i.ibb.co/HPyG9cm/tree3-end3.png");
             }
         }
-    }, 10)
+    }, 1000)
 
 }
 
