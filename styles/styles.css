@@ -46,7 +46,7 @@ margin:0;
 padding:0;
 /*Removing the unecessary dots of list*/
 list-style:none;
-    }
+}
 
 .main-nav a:hover {
     color: #2EA5FA;
@@ -98,6 +98,7 @@ list-style:none;
         padding: 37px;
         font-size: 20px;
         font-weight:400;
+        
     }
 
     .main-header {
@@ -184,10 +185,12 @@ list-style:none;
     .successUnlock{
         position: absolute;
         top:560px;
-        left: 130px; 
+        left: 250px; 
     }
     .successUnlock .tree {
-        margin-left:30px
+        margin-left:30px;
+        width: 120px;
+        height:auto;
     }
     /* END OF BOTTOM PAGE SUCCESS STREAK */
 
@@ -326,7 +329,7 @@ list-style:none;
 /* */
 
 /*  */
-@media(max-width: 840px){
+@media(max-width: 920px){
 
 
     .webLogo img {
@@ -449,7 +452,7 @@ list-style:none;
     }
     .successUnlock .tree {
         width:100px;
-        height:110px;
+        height:auto;
         margin-left:30px
     }
     /* END OF BOTTOM PAGE SUCCESS STREAK */
@@ -457,7 +460,7 @@ list-style:none;
 /* */
 
 /*  */
-@media(max-width: 690px){
+@media(max-width: 800px){
 
 
     .webLogo img {
@@ -578,9 +581,9 @@ list-style:none;
         left: 0px; 
     }
     .successUnlock .tree {
-        width:120px;
-        height:130px;
-        margin-left:30px
+        width:75px;
+        height:auto;
+        margin-left:5px
     }
     /* END OF BOTTOM PAGE SUCCESS STREAK */
 }
@@ -625,7 +628,8 @@ list-style:none;
         /*Align center*/
         align-items: center;
         /*So that our elements are as far apart as possible*/
-        height: 140px;
+        justify-content: space-between;
+        height: 100px;
     }
     /* END OF HEADER */
 
@@ -708,13 +712,13 @@ list-style:none;
 /* BOTTOM PAGE SUCCESS STREAK */
     .successUnlock{
         position: absolute;
-        top:440px;
-        left: -15px; 
+        top:460px;
+        left: 0px; 
     }
     .successUnlock .tree {
-        width:100px;
-        height:110px;
-        margin-left:30px
+        width:60px;
+        height:auto;
+        margin-left:5px
     }
     /* END OF BOTTOM PAGE SUCCESS STREAK */
 }
