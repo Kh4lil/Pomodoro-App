@@ -586,3 +586,137 @@ list-style:none;
 }
 /* */
 
+
+@media(max-width: 450px){
+
+
+    .webLogo img {
+        width:50px;
+        height:50px;
+    }
+
+    .webName {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 52px;
+        /* Title is linear-gradient */
+        background: -webkit-linear-gradient(left, #209E64, #2EA5FA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* Spacing it from our Logo */
+        margin-left: 5px;
+        
+    }
+        /* END OF LOGO + TITLE */
+
+
+    .main-nav a {
+        color:inherit;
+        text-decoration: none;
+        padding: 8px;
+        font-size: 13px;
+        font-weight:400;
+    }
+
+
+    .main-header {
+        /*Flex so that items are next to each others*/
+        display: flex;
+        /*Align center*/
+        align-items: center;
+        /*So that our elements are as far apart as possible*/
+        height: 140px;
+    }
+    /* END OF HEADER */
+
+    /*========================*/
+
+    /* BUTTONS TOP */
+
+    .top-section {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 20px;
+        top: 120px;  
+    }
+    .btn-top {
+        color: #E0DCDC;
+        font-size: 15px;
+        font-weight: 400;
+        background-color: #2CA4E2;
+        padding: 0.75rem 1.2rem;
+        border-radius: 10px;
+        text-decoration: none;
+        width:120px;
+        margin-left:2px;
+    }
+    #first-top-btn  {
+        margin-left: 0px;
+    }
+
+    /* END OF BUTTONS TOP */
+
+    /*========================*/
+
+    /* TIMER SECTION */
+
+    .timer-section {
+        position: absolute;
+        width: auto;
+        height: 200px;
+        left: 35px;
+        top: 180px;
+        line-height: 180px;
+        display:flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    #timer_default {
+        font-size: 140px;
+        line-height: 180px;
+        font-weight: 80;
+    }
+
+    /* END TIMER SECTION */
+
+    /*========================*/
+
+    /* BUTTONS BOTTOM */
+
+    .bottom-section {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 25px;;
+        top: 370px;
+    }
+    .btn-bottom {
+        align-items: center;
+        color: #E0DCDC;
+        font-size: 15px;
+        font-weight: 400;
+        background-color: #2CA4E2;
+        padding: 0.8rem 1.2rem;
+        border-radius: 10px;
+        text-decoration: none;
+        width:100px;
+        margin-left:30px;
+    }
+/* END BUTTONS BOTTOM */
+/* BOTTOM PAGE SUCCESS STREAK */
+    .successUnlock{
+        position: absolute;
+        top:440px;
+        left: -15px; 
+    }
+    .successUnlock .tree {
+        width:100px;
+        height:110px;
+        margin-left:30px
+    }
+    /* END OF BOTTOM PAGE SUCCESS STREAK */
+}
+/* */
+
